@@ -1,0 +1,43 @@
+.profile {
+  padding: 1rem;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: left;
+}
+
+.control input {
+  display: block;
+  font: inherit;
+  width: 100%;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  padding: 0.25rem;
+}
+
+.action {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.action button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+  background-color: #77002e;
+  color: white;
+  border: 1px solid #77002e;
+}
+
+.action button:hover {
+  background-color: #a50e48;
+  border-color: #a50e48;
+}
