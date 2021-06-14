@@ -2,13 +2,29 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, create **next.config.js** file with the following structure at root level, replacing the empty string values for env vars for your own env vars values
+
+````js
+module.exports = {
+  images: {
+    domains: ["upload.wikimedia.org"],
+  },
+  env: {
+    DB_HOST: "",
+    DB_USER: "",
+    DB_PASS: "",
+    DB_NAME: "",
+  },
+}```
+
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-```
+````
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -17,6 +33,24 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Build for production
+
+run:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+Then, the built package can be locally run:
+
+```bash
+npm run start
+# or
+yarn start
+```
 
 ## Learn More
 
