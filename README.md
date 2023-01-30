@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, create **next.config.js** file with the following structure at root level, replacing the empty string values for env vars for your own env vars values
 
-````js
+```js
 module.exports = {
   images: {
     domains: ["upload.wikimedia.org"],
@@ -17,6 +17,13 @@ module.exports = {
   },
 }```
 
+Install all the required dependencies 
+
+```bash
+npm install
+# or
+yarn install
+```
 
 Then, run the development server:
 
@@ -24,7 +31,7 @@ Then, run the development server:
 npm run dev
 # or
 yarn dev
-````
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
